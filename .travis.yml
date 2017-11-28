@@ -1,0 +1,27 @@
+os: linux
+dist: trusty
+sudo: required
+language: python
+python:
+  - "2.7"
+  - "3.6"
+
+before_install:
+  - ./travis/before_install/run.sh
+
+install:
+  - ./travis/install/run.sh
+
+script:
+  - ./travis/script/run.sh
+
+after_success:
+  - ./travis/after_success/run.sh
+
+after_failure:
+  - ./travis/after_failure/run.sh
+
+cache:
+  - directories:
+    - $HOME/.cache
+    - $HOME/.ccache
