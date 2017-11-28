@@ -38,7 +38,7 @@ def checkout_cmd(args):
         ])
         with cd(repo_dir):
             subprocess.check_call([
-                'git', 'co', commit
+                'git', 'checkout', commit
             ])
             subprocess.check_call([
                 'git', 'submodule', 'update', '--init', '--recursive'
