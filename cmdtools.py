@@ -38,11 +38,6 @@ def checkout_cmd(args):
         ])
         with cd(repo_dir):
             subprocess.check_call([
-                'git', 'fetch', '--tags',
-                '--progress', url,
-                '+refs/pull/*:refs/remotes/origin/pr/*'
-            ])
-            subprocess.check_call([
                 'git', 'checkout', commit
             ])
             subprocess.check_call([
