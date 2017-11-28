@@ -22,7 +22,7 @@ ccache -s
 pip install pyaml
 ccache -z
 cd "$REPOS_DIR/pytorch"
-time python setup.py install
+time python setup.py install --quiet
 ccache -s
 
 # Install onnx-pytorch
