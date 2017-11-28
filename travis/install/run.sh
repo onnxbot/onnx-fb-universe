@@ -18,13 +18,13 @@ ccache -z
 pip install -b "$BUILD_DIR/onnx-caffe2" -e "file://$REPOS_DIR/onnx-caffe2#egg=onnx-caffe2"
 ccache -s
 
-# # Install pytorch
-# pip install pyaml
-# ccache -z
-# pip install -b "$BUILD_DIR/pytorch" "file://$REPOS_DIR/pytorch#egg=pytorch"
-# ccache -s
+# Install pytorch
+pip install pyaml
+ccache -z
+pip install -b "$BUILD_DIR/pytorch" "file://$REPOS_DIR/pytorch#egg=torch"
+ccache -s
 
-# # Install onnx-pytorch
-# ccache -z
-# pip install -b "$BUILD_DIR/onnx-pytorch" "file://$REPOS_DIR/onnx-pytorch#egg=onnx-pytorch"
-# ccache -s
+# Install onnx-pytorch
+ccache -z
+pip install -b "$BUILD_DIR/onnx-pytorch" "file://$REPOS_DIR/onnx-pytorch#egg=onnx-pytorch"
+ccache -s
