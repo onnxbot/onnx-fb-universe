@@ -10,12 +10,12 @@ ccache -s
 
 # Install onnx
 ccache -z
-pip install -b "$BUILD_DIR/onnx" "file://$REPOS_DIR/onnx#egg=onnx"
+pip install -b "$BUILD_DIR/onnx" -e "file://$REPOS_DIR/onnx#egg=onnx"
 ccache -s
 
 # Install onnx-caffe2
 ccache -z
-pip install -b "$BUILD_DIR/onnx-caffe2" "file://$REPOS_DIR/onnx-caffe2#egg=onnx-caffe2"
+pip install -b "$BUILD_DIR/onnx-caffe2" -e "file://$REPOS_DIR/onnx-caffe2#egg=onnx-caffe2"
 ccache -s
 
 # # Install pytorch
