@@ -21,7 +21,8 @@ ccache -s
 # Install pytorch
 pip install pyaml
 ccache -z
-time pip install -b "$BUILD_DIR/pytorch" "file://$REPOS_DIR/pytorch#egg=torch"
+cd "$REPOS_DIR/pytorch"
+time python setup.py install
 ccache -s
 
 # Install onnx-pytorch
