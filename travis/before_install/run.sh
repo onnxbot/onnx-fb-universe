@@ -12,5 +12,5 @@ ccache -z
 cd "$pb_dir" && ./configure && make && make check && sudo make install && sudo ldconfig
 ccache -s
 
-# # Checkout
-# $CMD_TOOLS checkout "$CONFIG_FILE" -o "$REPOS_DIR"
+# Checkout
+$CMD_TOOLS checkout "$CONFIG_FILE" -o "$REPOS_DIR"
