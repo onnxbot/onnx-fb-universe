@@ -22,7 +22,7 @@
     },
     {
       "url": "https://github.com/ezyang/onnx-pytorch",
-      "commit": "029bff7",
+      "commit": "master",
       "name": "onnx-pytorch"
     }
   ]
