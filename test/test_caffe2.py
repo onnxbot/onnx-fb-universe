@@ -252,7 +252,7 @@ class TestCaffe2Backend(unittest.TestCase):
                             batch_size=BATCH_SIZE, state_dict=state_dict,
                             input=x, use_gpu=False)
 
-    @skipIfTravis
+    @unittest.skip("This model takes too much memory")
     def test_vgg16(self):
         vgg16 = make_vgg16()
         state_dict = model_zoo.load_url(model_urls['vgg16'])
