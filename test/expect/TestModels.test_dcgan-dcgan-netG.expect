@@ -1,0 +1,45 @@
+graph torch-jit-export (
+  %0[FLOAT, 64x100x1x1]
+  %1[FLOAT, 100x512x4x4]
+  %2[FLOAT, 512]
+  %3[FLOAT, 512]
+  %4[FLOAT, 512]
+  %5[FLOAT, 512]
+  %6[FLOAT, 512x256x4x4]
+  %7[FLOAT, 256]
+  %8[FLOAT, 256]
+  %9[FLOAT, 256]
+  %10[FLOAT, 256]
+  %11[FLOAT, 256x128x4x4]
+  %12[FLOAT, 128]
+  %13[FLOAT, 128]
+  %14[FLOAT, 128]
+  %15[FLOAT, 128]
+  %16[FLOAT, 128x64x4x4]
+  %17[FLOAT, 64]
+  %18[FLOAT, 64]
+  %19[FLOAT, 64]
+  %20[FLOAT, 64]
+  %21[FLOAT, 64x3x4x4]
+) {
+  %24 = Constant[value = <Tensor>]()
+  %23 = ConvTranspose[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [0, 0, 0, 0], strides = [1, 1]](%0, %1, %24)
+  %25 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%23, %2, %3, %4, %5)
+  %26 = Relu(%25)
+  %29 = Constant[value = <Tensor>]()
+  %28 = ConvTranspose[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%26, %6, %29)
+  %30 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%28, %7, %8, %9, %10)
+  %31 = Relu(%30)
+  %34 = Constant[value = <Tensor>]()
+  %33 = ConvTranspose[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%31, %11, %34)
+  %35 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%33, %12, %13, %14, %15)
+  %36 = Relu(%35)
+  %39 = Constant[value = <Tensor>]()
+  %38 = ConvTranspose[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%36, %16, %39)
+  %40 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%38, %17, %18, %19, %20)
+  %41 = Relu(%40)
+  %44 = Constant[value = <Tensor>]()
+  %43 = ConvTranspose[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%41, %21, %44)
+  %45 = Tanh(%43)
+  return %45
+}

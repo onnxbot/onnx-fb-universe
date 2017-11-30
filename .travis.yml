@@ -7,19 +7,19 @@ python:
   - "3.6"
 
 before_install:
-  - ./travis/before_install/run.sh
+  - ./travis/before_install.sh
 
 install:
-  - ./travis/install/run.sh
+  - ./travis/install.sh
 
 script:
-  - ./travis/script/run.sh
+  - ./travis/script.sh
 
 after_success:
-  - ./travis/after_success/run.sh
+  - ./travis/after_success.sh
 
 after_failure:
-  - ./travis/after_failure/run.sh
+  - ./travis/after_failure.sh
 
 cache:
   - directories:

@@ -1,0 +1,74 @@
+ir_version: 1
+producer_name: "pytorch"
+producer_version: "0.2"
+domain: "com.facebook"
+graph {
+  node {
+    input: "0"
+    input: "1"
+    output: "2"
+    op_type: "Mul"
+  }
+  node {
+    input: "2"
+    input: "0"
+    output: "3"
+    op_type: "Add"
+  }
+  name: "torch-jit-export"
+  initializer {
+    dims: 2
+    dims: 2
+    data_type: INT64
+    name: "1"
+    raw_data: "\001\000\000\000\000\000\000\000\002\000\000\000\000\000\000\000\003\000\000\000\000\000\000\000\004\000\000\000\000\000\000\000"
+  }
+  input {
+    name: "0"
+    type {
+      tensor_type {
+        elem_type: INT64
+        shape {
+          dim {
+            dim_value: 2
+          }
+          dim {
+            dim_value: 2
+          }
+        }
+      }
+    }
+  }
+  input {
+    name: "1"
+    type {
+      tensor_type {
+        elem_type: INT64
+        shape {
+          dim {
+            dim_value: 2
+          }
+          dim {
+            dim_value: 2
+          }
+        }
+      }
+    }
+  }
+  output {
+    name: "3"
+    type {
+      tensor_type {
+        elem_type: INT64
+        shape {
+          dim {
+            dim_value: 2
+          }
+          dim {
+            dim_value: 2
+          }
+        }
+      }
+    }
+  }
+}

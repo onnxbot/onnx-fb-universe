@@ -1,0 +1,11 @@
+ONNX backend returned different results from PyTorch
+----------------------------------------------------------------------
+ERROR: In output 0: Arrays are not almost equal to 3 decimals
+
+(mismatch 100.0%)
+ x: array([-2., -2.], dtype=float32)
+ y: array([ 4.,  6.], dtype=float32)
+
+  * If you are not using trained parameters, a difference in results
+    could mean that your network is numerically unstable.  Otherwise
+    it indicates a bug in PyTorch/ONNX; please file a bug report.

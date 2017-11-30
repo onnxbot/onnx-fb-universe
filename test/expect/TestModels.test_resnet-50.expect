@@ -1,0 +1,447 @@
+graph torch-jit-export (
+  %0[FLOAT, 2x3x224x224]
+  %1[FLOAT, 64x3x7x7]
+  %2[FLOAT, 64]
+  %3[FLOAT, 64]
+  %4[FLOAT, 64]
+  %5[FLOAT, 64]
+  %6[FLOAT, 64x64x1x1]
+  %7[FLOAT, 64]
+  %8[FLOAT, 64]
+  %9[FLOAT, 64]
+  %10[FLOAT, 64]
+  %11[FLOAT, 64x64x3x3]
+  %12[FLOAT, 64]
+  %13[FLOAT, 64]
+  %14[FLOAT, 64]
+  %15[FLOAT, 64]
+  %16[FLOAT, 256x64x1x1]
+  %17[FLOAT, 256]
+  %18[FLOAT, 256]
+  %19[FLOAT, 256]
+  %20[FLOAT, 256]
+  %21[FLOAT, 256x64x1x1]
+  %22[FLOAT, 256]
+  %23[FLOAT, 256]
+  %24[FLOAT, 256]
+  %25[FLOAT, 256]
+  %26[FLOAT, 64x256x1x1]
+  %27[FLOAT, 64]
+  %28[FLOAT, 64]
+  %29[FLOAT, 64]
+  %30[FLOAT, 64]
+  %31[FLOAT, 64x64x3x3]
+  %32[FLOAT, 64]
+  %33[FLOAT, 64]
+  %34[FLOAT, 64]
+  %35[FLOAT, 64]
+  %36[FLOAT, 256x64x1x1]
+  %37[FLOAT, 256]
+  %38[FLOAT, 256]
+  %39[FLOAT, 256]
+  %40[FLOAT, 256]
+  %41[FLOAT, 64x256x1x1]
+  %42[FLOAT, 64]
+  %43[FLOAT, 64]
+  %44[FLOAT, 64]
+  %45[FLOAT, 64]
+  %46[FLOAT, 64x64x3x3]
+  %47[FLOAT, 64]
+  %48[FLOAT, 64]
+  %49[FLOAT, 64]
+  %50[FLOAT, 64]
+  %51[FLOAT, 256x64x1x1]
+  %52[FLOAT, 256]
+  %53[FLOAT, 256]
+  %54[FLOAT, 256]
+  %55[FLOAT, 256]
+  %56[FLOAT, 128x256x1x1]
+  %57[FLOAT, 128]
+  %58[FLOAT, 128]
+  %59[FLOAT, 128]
+  %60[FLOAT, 128]
+  %61[FLOAT, 128x128x3x3]
+  %62[FLOAT, 128]
+  %63[FLOAT, 128]
+  %64[FLOAT, 128]
+  %65[FLOAT, 128]
+  %66[FLOAT, 512x128x1x1]
+  %67[FLOAT, 512]
+  %68[FLOAT, 512]
+  %69[FLOAT, 512]
+  %70[FLOAT, 512]
+  %71[FLOAT, 512x256x1x1]
+  %72[FLOAT, 512]
+  %73[FLOAT, 512]
+  %74[FLOAT, 512]
+  %75[FLOAT, 512]
+  %76[FLOAT, 128x512x1x1]
+  %77[FLOAT, 128]
+  %78[FLOAT, 128]
+  %79[FLOAT, 128]
+  %80[FLOAT, 128]
+  %81[FLOAT, 128x128x3x3]
+  %82[FLOAT, 128]
+  %83[FLOAT, 128]
+  %84[FLOAT, 128]
+  %85[FLOAT, 128]
+  %86[FLOAT, 512x128x1x1]
+  %87[FLOAT, 512]
+  %88[FLOAT, 512]
+  %89[FLOAT, 512]
+  %90[FLOAT, 512]
+  %91[FLOAT, 128x512x1x1]
+  %92[FLOAT, 128]
+  %93[FLOAT, 128]
+  %94[FLOAT, 128]
+  %95[FLOAT, 128]
+  %96[FLOAT, 128x128x3x3]
+  %97[FLOAT, 128]
+  %98[FLOAT, 128]
+  %99[FLOAT, 128]
+  %100[FLOAT, 128]
+  %101[FLOAT, 512x128x1x1]
+  %102[FLOAT, 512]
+  %103[FLOAT, 512]
+  %104[FLOAT, 512]
+  %105[FLOAT, 512]
+  %106[FLOAT, 128x512x1x1]
+  %107[FLOAT, 128]
+  %108[FLOAT, 128]
+  %109[FLOAT, 128]
+  %110[FLOAT, 128]
+  %111[FLOAT, 128x128x3x3]
+  %112[FLOAT, 128]
+  %113[FLOAT, 128]
+  %114[FLOAT, 128]
+  %115[FLOAT, 128]
+  %116[FLOAT, 512x128x1x1]
+  %117[FLOAT, 512]
+  %118[FLOAT, 512]
+  %119[FLOAT, 512]
+  %120[FLOAT, 512]
+  %121[FLOAT, 256x512x1x1]
+  %122[FLOAT, 256]
+  %123[FLOAT, 256]
+  %124[FLOAT, 256]
+  %125[FLOAT, 256]
+  %126[FLOAT, 256x256x3x3]
+  %127[FLOAT, 256]
+  %128[FLOAT, 256]
+  %129[FLOAT, 256]
+  %130[FLOAT, 256]
+  %131[FLOAT, 1024x256x1x1]
+  %132[FLOAT, 1024]
+  %133[FLOAT, 1024]
+  %134[FLOAT, 1024]
+  %135[FLOAT, 1024]
+  %136[FLOAT, 1024x512x1x1]
+  %137[FLOAT, 1024]
+  %138[FLOAT, 1024]
+  %139[FLOAT, 1024]
+  %140[FLOAT, 1024]
+  %141[FLOAT, 256x1024x1x1]
+  %142[FLOAT, 256]
+  %143[FLOAT, 256]
+  %144[FLOAT, 256]
+  %145[FLOAT, 256]
+  %146[FLOAT, 256x256x3x3]
+  %147[FLOAT, 256]
+  %148[FLOAT, 256]
+  %149[FLOAT, 256]
+  %150[FLOAT, 256]
+  %151[FLOAT, 1024x256x1x1]
+  %152[FLOAT, 1024]
+  %153[FLOAT, 1024]
+  %154[FLOAT, 1024]
+  %155[FLOAT, 1024]
+  %156[FLOAT, 256x1024x1x1]
+  %157[FLOAT, 256]
+  %158[FLOAT, 256]
+  %159[FLOAT, 256]
+  %160[FLOAT, 256]
+  %161[FLOAT, 256x256x3x3]
+  %162[FLOAT, 256]
+  %163[FLOAT, 256]
+  %164[FLOAT, 256]
+  %165[FLOAT, 256]
+  %166[FLOAT, 1024x256x1x1]
+  %167[FLOAT, 1024]
+  %168[FLOAT, 1024]
+  %169[FLOAT, 1024]
+  %170[FLOAT, 1024]
+  %171[FLOAT, 256x1024x1x1]
+  %172[FLOAT, 256]
+  %173[FLOAT, 256]
+  %174[FLOAT, 256]
+  %175[FLOAT, 256]
+  %176[FLOAT, 256x256x3x3]
+  %177[FLOAT, 256]
+  %178[FLOAT, 256]
+  %179[FLOAT, 256]
+  %180[FLOAT, 256]
+  %181[FLOAT, 1024x256x1x1]
+  %182[FLOAT, 1024]
+  %183[FLOAT, 1024]
+  %184[FLOAT, 1024]
+  %185[FLOAT, 1024]
+  %186[FLOAT, 256x1024x1x1]
+  %187[FLOAT, 256]
+  %188[FLOAT, 256]
+  %189[FLOAT, 256]
+  %190[FLOAT, 256]
+  %191[FLOAT, 256x256x3x3]
+  %192[FLOAT, 256]
+  %193[FLOAT, 256]
+  %194[FLOAT, 256]
+  %195[FLOAT, 256]
+  %196[FLOAT, 1024x256x1x1]
+  %197[FLOAT, 1024]
+  %198[FLOAT, 1024]
+  %199[FLOAT, 1024]
+  %200[FLOAT, 1024]
+  %201[FLOAT, 256x1024x1x1]
+  %202[FLOAT, 256]
+  %203[FLOAT, 256]
+  %204[FLOAT, 256]
+  %205[FLOAT, 256]
+  %206[FLOAT, 256x256x3x3]
+  %207[FLOAT, 256]
+  %208[FLOAT, 256]
+  %209[FLOAT, 256]
+  %210[FLOAT, 256]
+  %211[FLOAT, 1024x256x1x1]
+  %212[FLOAT, 1024]
+  %213[FLOAT, 1024]
+  %214[FLOAT, 1024]
+  %215[FLOAT, 1024]
+  %216[FLOAT, 512x1024x1x1]
+  %217[FLOAT, 512]
+  %218[FLOAT, 512]
+  %219[FLOAT, 512]
+  %220[FLOAT, 512]
+  %221[FLOAT, 512x512x3x3]
+  %222[FLOAT, 512]
+  %223[FLOAT, 512]
+  %224[FLOAT, 512]
+  %225[FLOAT, 512]
+  %226[FLOAT, 2048x512x1x1]
+  %227[FLOAT, 2048]
+  %228[FLOAT, 2048]
+  %229[FLOAT, 2048]
+  %230[FLOAT, 2048]
+  %231[FLOAT, 2048x1024x1x1]
+  %232[FLOAT, 2048]
+  %233[FLOAT, 2048]
+  %234[FLOAT, 2048]
+  %235[FLOAT, 2048]
+  %236[FLOAT, 512x2048x1x1]
+  %237[FLOAT, 512]
+  %238[FLOAT, 512]
+  %239[FLOAT, 512]
+  %240[FLOAT, 512]
+  %241[FLOAT, 512x512x3x3]
+  %242[FLOAT, 512]
+  %243[FLOAT, 512]
+  %244[FLOAT, 512]
+  %245[FLOAT, 512]
+  %246[FLOAT, 2048x512x1x1]
+  %247[FLOAT, 2048]
+  %248[FLOAT, 2048]
+  %249[FLOAT, 2048]
+  %250[FLOAT, 2048]
+  %251[FLOAT, 512x2048x1x1]
+  %252[FLOAT, 512]
+  %253[FLOAT, 512]
+  %254[FLOAT, 512]
+  %255[FLOAT, 512]
+  %256[FLOAT, 512x512x3x3]
+  %257[FLOAT, 512]
+  %258[FLOAT, 512]
+  %259[FLOAT, 512]
+  %260[FLOAT, 512]
+  %261[FLOAT, 2048x512x1x1]
+  %262[FLOAT, 2048]
+  %263[FLOAT, 2048]
+  %264[FLOAT, 2048]
+  %265[FLOAT, 2048]
+  %266[FLOAT, 1000x2048]
+  %267[FLOAT, 1000]
+) {
+  %269 = Conv[dilations = [1, 1], group = 1, kernel_shape = [7, 7], pads = [3, 3, 3, 3], strides = [2, 2]](%0, %1)
+  %270 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%269, %2, %3, %4, %5)
+  %271 = Relu(%270)
+  %272 = MaxPool[kernel_shape = [3, 3], pads = [1, 1], strides = [2, 2]](%271)
+  %274 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%272, %6)
+  %275 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%274, %7, %8, %9, %10)
+  %276 = Relu(%275)
+  %278 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%276, %11)
+  %279 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%278, %12, %13, %14, %15)
+  %280 = Relu(%279)
+  %282 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%280, %16)
+  %283 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%282, %17, %18, %19, %20)
+  %285 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%272, %21)
+  %286 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%285, %22, %23, %24, %25)
+  %287 = Add(%283, %286)
+  %288 = Relu(%287)
+  %290 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%288, %26)
+  %291 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%290, %27, %28, %29, %30)
+  %292 = Relu(%291)
+  %294 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%292, %31)
+  %295 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%294, %32, %33, %34, %35)
+  %296 = Relu(%295)
+  %298 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%296, %36)
+  %299 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%298, %37, %38, %39, %40)
+  %300 = Add(%299, %288)
+  %301 = Relu(%300)
+  %303 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%301, %41)
+  %304 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%303, %42, %43, %44, %45)
+  %305 = Relu(%304)
+  %307 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%305, %46)
+  %308 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%307, %47, %48, %49, %50)
+  %309 = Relu(%308)
+  %311 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%309, %51)
+  %312 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%311, %52, %53, %54, %55)
+  %313 = Add(%312, %301)
+  %314 = Relu(%313)
+  %316 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%314, %56)
+  %317 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%316, %57, %58, %59, %60)
+  %318 = Relu(%317)
+  %320 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [2, 2]](%318, %61)
+  %321 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%320, %62, %63, %64, %65)
+  %322 = Relu(%321)
+  %324 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%322, %66)
+  %325 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%324, %67, %68, %69, %70)
+  %327 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [2, 2]](%314, %71)
+  %328 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%327, %72, %73, %74, %75)
+  %329 = Add(%325, %328)
+  %330 = Relu(%329)
+  %332 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%330, %76)
+  %333 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%332, %77, %78, %79, %80)
+  %334 = Relu(%333)
+  %336 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%334, %81)
+  %337 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%336, %82, %83, %84, %85)
+  %338 = Relu(%337)
+  %340 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%338, %86)
+  %341 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%340, %87, %88, %89, %90)
+  %342 = Add(%341, %330)
+  %343 = Relu(%342)
+  %345 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%343, %91)
+  %346 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%345, %92, %93, %94, %95)
+  %347 = Relu(%346)
+  %349 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%347, %96)
+  %350 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%349, %97, %98, %99, %100)
+  %351 = Relu(%350)
+  %353 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%351, %101)
+  %354 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%353, %102, %103, %104, %105)
+  %355 = Add(%354, %343)
+  %356 = Relu(%355)
+  %358 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%356, %106)
+  %359 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%358, %107, %108, %109, %110)
+  %360 = Relu(%359)
+  %362 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%360, %111)
+  %363 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%362, %112, %113, %114, %115)
+  %364 = Relu(%363)
+  %366 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%364, %116)
+  %367 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%366, %117, %118, %119, %120)
+  %368 = Add(%367, %356)
+  %369 = Relu(%368)
+  %371 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%369, %121)
+  %372 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%371, %122, %123, %124, %125)
+  %373 = Relu(%372)
+  %375 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [2, 2]](%373, %126)
+  %376 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%375, %127, %128, %129, %130)
+  %377 = Relu(%376)
+  %379 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%377, %131)
+  %380 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%379, %132, %133, %134, %135)
+  %382 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [2, 2]](%369, %136)
+  %383 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%382, %137, %138, %139, %140)
+  %384 = Add(%380, %383)
+  %385 = Relu(%384)
+  %387 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%385, %141)
+  %388 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%387, %142, %143, %144, %145)
+  %389 = Relu(%388)
+  %391 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%389, %146)
+  %392 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%391, %147, %148, %149, %150)
+  %393 = Relu(%392)
+  %395 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%393, %151)
+  %396 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%395, %152, %153, %154, %155)
+  %397 = Add(%396, %385)
+  %398 = Relu(%397)
+  %400 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%398, %156)
+  %401 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%400, %157, %158, %159, %160)
+  %402 = Relu(%401)
+  %404 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%402, %161)
+  %405 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%404, %162, %163, %164, %165)
+  %406 = Relu(%405)
+  %408 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%406, %166)
+  %409 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%408, %167, %168, %169, %170)
+  %410 = Add(%409, %398)
+  %411 = Relu(%410)
+  %413 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%411, %171)
+  %414 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%413, %172, %173, %174, %175)
+  %415 = Relu(%414)
+  %417 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%415, %176)
+  %418 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%417, %177, %178, %179, %180)
+  %419 = Relu(%418)
+  %421 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%419, %181)
+  %422 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%421, %182, %183, %184, %185)
+  %423 = Add(%422, %411)
+  %424 = Relu(%423)
+  %426 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%424, %186)
+  %427 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%426, %187, %188, %189, %190)
+  %428 = Relu(%427)
+  %430 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%428, %191)
+  %431 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%430, %192, %193, %194, %195)
+  %432 = Relu(%431)
+  %434 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%432, %196)
+  %435 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%434, %197, %198, %199, %200)
+  %436 = Add(%435, %424)
+  %437 = Relu(%436)
+  %439 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%437, %201)
+  %440 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%439, %202, %203, %204, %205)
+  %441 = Relu(%440)
+  %443 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%441, %206)
+  %444 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%443, %207, %208, %209, %210)
+  %445 = Relu(%444)
+  %447 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%445, %211)
+  %448 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%447, %212, %213, %214, %215)
+  %449 = Add(%448, %437)
+  %450 = Relu(%449)
+  %452 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%450, %216)
+  %453 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%452, %217, %218, %219, %220)
+  %454 = Relu(%453)
+  %456 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [2, 2]](%454, %221)
+  %457 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%456, %222, %223, %224, %225)
+  %458 = Relu(%457)
+  %460 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%458, %226)
+  %461 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%460, %227, %228, %229, %230)
+  %463 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [2, 2]](%450, %231)
+  %464 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%463, %232, %233, %234, %235)
+  %465 = Add(%461, %464)
+  %466 = Relu(%465)
+  %468 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%466, %236)
+  %469 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%468, %237, %238, %239, %240)
+  %470 = Relu(%469)
+  %472 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%470, %241)
+  %473 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%472, %242, %243, %244, %245)
+  %474 = Relu(%473)
+  %476 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%474, %246)
+  %477 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%476, %247, %248, %249, %250)
+  %478 = Add(%477, %466)
+  %479 = Relu(%478)
+  %481 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%479, %251)
+  %482 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%481, %252, %253, %254, %255)
+  %483 = Relu(%482)
+  %485 = Conv[dilations = [1, 1], group = 1, kernel_shape = [3, 3], pads = [1, 1, 1, 1], strides = [1, 1]](%483, %256)
+  %486 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%485, %257, %258, %259, %260)
+  %487 = Relu(%486)
+  %489 = Conv[dilations = [1, 1], group = 1, kernel_shape = [1, 1], pads = [0, 0, 0, 0], strides = [1, 1]](%487, %261)
+  %490 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%489, %262, %263, %264, %265)
+  %491 = Add(%490, %479)
+  %492 = Relu(%491)
+  %493 = AveragePool[kernel_shape = [7, 7], pads = [0, 0], strides = [7, 7]](%492)
+  %494 = Reshape[shape = [2, -1]](%493)
+  %497 = Gemm[alpha = 1, beta = 1, broadcast = 1, transB = 1](%494, %266, %267)
+  return %497
+}
