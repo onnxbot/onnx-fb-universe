@@ -23,7 +23,7 @@ time pip install -b "$BUILD_DIR/onnx-caffe2" "file://$REPOS_DIR/onnx-caffe2#egg=
 ccache -s
 
 # Install pytorch
-pip install pyaml
+pip install -r "$REPOS_DIR/pytorch/requirements.txt"
 ccache -z
 time pip install -b "$BUILD_DIR/pytorch" "file://$REPOS_DIR/pytorch#egg=torch"
 ccache -s
