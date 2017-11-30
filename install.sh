@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+set -ex
 
 top_dir=$(dirname $(readlink -e "${BASH_SOURCE[0]}"))
 REPOS_DIR="$top_dir/repos"
