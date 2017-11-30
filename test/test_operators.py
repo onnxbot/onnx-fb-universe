@@ -167,6 +167,8 @@ class TestOperators(TestCase):
         x = Variable(torch.randn(20, 16, 50))
         self.assertONNXExpected(export_to_string(nn.MaxPool1d(3, stride=2), x))
 
+    @unittest.skip('Broken by onnx repo Variadic inputs commit '
+                   'https://github.com/onnx/onnx/commit/fd5493013e6cd1f41a560f05965216ec106f56eb')
     def test_at_op(self):
         x = Variable(torch.randn(3, 4))
 
