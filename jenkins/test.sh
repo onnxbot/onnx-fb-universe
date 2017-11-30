@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec "$top_dir/test.sh"
+exec "$TOP_DIR/test.sh"

@@ -1,8 +1,8 @@
 set -ex
 
-top_dir=$(dirname $(dirname $(readlink -e "${BASH_SOURCE[0]}")))
+export TOP_DIR=$(dirname $(dirname $(readlink -e "${BASH_SOURCE[0]}")))
 
-OS="$(uname)"
+export OS="$(uname)"
 
 # setup ccache for OSX
 if [[ "$OS" == "Darwin" ]]; then
@@ -10,6 +10,6 @@ if [[ "$OS" == "Darwin" ]]; then
 fi
 
 # setup virtualenv
-virtualenv "$top_dir/venv"
-source "$top_dir/venv/bin/activate"
+virtualenv "$TOP_DIR/venv"
+source "$TOP_DIR/venv/bin/activate"
 pip install -U pip setuptools

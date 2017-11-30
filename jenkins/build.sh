@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec "$top_dir/install.sh"
+exec "$TOP_DIR/install.sh"
