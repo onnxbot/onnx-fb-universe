@@ -1,7 +1,7 @@
 onnx-fb-builds
 ========
 
-[![Build Status](https://travis-ci.org/bddppq/onnx-fb-builds.svg?branch=master)](https://travis-ci.org/bddppq/onnx-fb-builds)
+[![Build Status](https://travis-ci.org/bddppq/onnx-fb-universe.svg?branch=master)](https://travis-ci.org/bddppq/onnx-fb-universe)
 
 This repo contains end-to-end tests of PyTorch -> ONNX -> Caffe2
 
