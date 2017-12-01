@@ -2,7 +2,12 @@
 
 set -ex
 
-top_dir=$(dirname $(readlink -e "${BASH_SOURCE[0]}"))
+if [[ "$(uname)" == 'Darwin' ]]; then
+    script_path=$(realpath -e "${BASH_SOURCE[0]}")
+else
+    script_path=$(readlink -e "${BASH_SOURCE[0]}")
+fi
+top_dir=$(dirname "$script_path")
 REPOS_DIR="$top_dir/repos"
 BUILD_DIR="$top_dir/build"
 mkdir -p "$BUILD_DIR"
