@@ -244,6 +244,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
     @skipIfTravis
     @skipIfNoLapack
+    @skipIfNoCuda
     def test_super_resolution(self):
         super_resolution_net = SuperResolutionNet(upscale_factor=3)
         state_dict = model_zoo.load_url(model_urls['super_resolution'])
