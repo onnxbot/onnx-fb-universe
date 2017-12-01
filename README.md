@@ -1,7 +1,9 @@
 onnx-fb-builds
 ========
 
-[![Build Status](https://travis-ci.org/bddppq/onnx-fb-universe.svg?branch=master)](https://travis-ci.org/bddppq/onnx-fb-universe)
+| Travis | Jenkins |
+|--------|---------|
+| [![Build Status](https://travis-ci.org/bddppq/onnx-fb-universe.svg?branch=master)](https://travis-ci.org/bddppq/onnx-fb-universe) | [![Build Status](https://ci.pytorch.org/jenkins/buildStatus/icon?job=onnx-fb-universe-master)](https://ci.pytorch.org/jenkins/job/onnx-fb-universe-master/) |
 
 This repo contains end-to-end tests of PyTorch -> ONNX -> Caffe2
 
