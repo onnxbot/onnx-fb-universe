@@ -1,5 +1,7 @@
 set -ex
 
+export CI=true
+
 export TOP_DIR=$(dirname $(dirname $(readlink -e "${BASH_SOURCE[0]}")))
 
 export OS="$(uname)"
