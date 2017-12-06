@@ -1,8 +1,14 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
+
 import functools
 import os
 import unittest
 import sys
 import torch
+import torch.autograd.function as function
 
 _root_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 sys.path.insert(-1, os.path.join(_root_dir, "repos", "pytorch", "test"))
@@ -28,3 +34,7 @@ skipIfNoCuda = _skipper(lambda: not torch.cuda.is_available(),
 
 skipIfTravis = _skipper(lambda: os.getenv('TRAVIS'),
                         'Skip In Travis')
+
+
+def flatten(x):
+    return tuple(function._iter_filter(lambda o: isinstance(o, Variable) or torch.is_tensor(o))(x))

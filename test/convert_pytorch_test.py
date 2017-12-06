@@ -14,13 +14,9 @@ import torch
 import traceback
 
 import test_pytorch_common
+import test_onnx_common
 from common_nn import module_tests
 from test_nn import new_module_tests
-
-
-_generated_dir = os.path.join(os.path.dirname(
-    os.path.realpath(__file__)), os.pardir, "repos", "onnx", "onnx",
-    "backend", "test", "data", "generated")
 
 
 # Take a test case (a dict) as input, return the test name.
@@ -70,7 +66,7 @@ def convert_tests(testcases, sets=1):
             onnx_model = onnx.load_from_string(f.getvalue())
             onnx.checker.check_model(onnx_model)
             onnx.helper.strip_doc_string(onnx_model)
-            output_dir = os.path.join(_generated_dir, test_name)
+            output_dir = os.path.join(test_onnx_common.generated_dir, test_name)
 
             if os.path.exists(output_dir):
                 shutil.rmtree(output_dir)
@@ -98,7 +94,7 @@ def convert_tests(testcases, sets=1):
 
     print("Collect {} test cases from PyTorch repo, failed to export {} cases.".format(
         len(testcases), failed))
-    print("Generated cases are stored in {}.".format(_generated_dir))
+    print("Generated cases are stored in {}.".format(test_onnx_common.generated_dir))
 
 if __name__ == '__main__':
     testcases = module_tests + new_module_tests

@@ -1,4 +1,5 @@
-from test_pytorch_common import TestCase, run_tests, skipIfNoLapack
+from test_pytorch_common import TestCase, run_tests, skipIfNoLapack, flatten
+import test_onnx_common
 
 import torch
 import torch.onnx
@@ -15,6 +16,17 @@ import google.protobuf.text_format
 import itertools
 import io
 import unittest
+import inspect
+import argparse
+import glob
+import os
+import shutil
+import sys
+import common
+from onnx import numpy_helper
+
+
+_onnx_test = False
 
 
 def export_to_string(model, inputs, *args, **kwargs):
@@ -34,6 +46,7 @@ class FuncModule(Module):
 
 
 class TestOperators(TestCase):
+
     def assertONNXExpected(self, binary_pb, subname=None):
         model_def = onnx.ModelProto.FromString(binary_pb)
         onnx.checker.check_model(model_def)
@@ -46,7 +59,32 @@ class TestOperators(TestCase):
             m = f
         else:
             m = FuncModule(f, params)
-        self.assertONNXExpected(export_to_string(m, args, **kwargs))
+        onnx_model_pb = export_to_string(m, args, **kwargs)
+        self.assertONNXExpected(onnx_model_pb)
+        if _onnx_test:
+            test_function = inspect.stack()[1][0].f_code.co_name
+            test_name = test_function[0:4] + "_operator" + test_function[4:]
+            output_dir = test_onnx_common.output_dir(test_name)
+            if os.path.exists(output_dir):
+                shutil.rmtree(output_dir)
+            os.makedirs(output_dir)
+            with open(os.path.join(output_dir, "model.pb"), 'wb') as file:
+                file.write(onnx_model_pb)
+            data_dir = os.path.join(output_dir, "test_data_set_0")
+            os.makedirs(data_dir)
+            if isinstance(args, Variable):
+                args = (args,)
+            for index, var in enumerate(flatten(args)):
+                tensor = numpy_helper.from_array(var.data.numpy())
+                with open(os.path.join(data_dir, "input_{}.pb".format(index)), 'wb') as file:
+                    file.write(tensor.SerializeToString())
+            outputs = m(*args)
+            if isinstance(outputs, Variable):
+                outputs = (outputs,)
+            for index, var in enumerate(flatten(outputs)):
+                tesnor = numpy_helper.from_array(var.data.numpy())
+                with open(os.path.join(data_dir, "output_{}.pb".format(index)), 'wb') as file:
+                    file.write(tensor.SerializeToString())
 
     def assertONNXRaises(self, err, f, args, params=tuple(), **kwargs):
         if isinstance(f, nn.Module):
@@ -191,4 +229,12 @@ class TestOperators(TestCase):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument('--onnx-test', action='store_true', default=False)
+    args, remaining = parser.parse_known_args()
+    _onnx_test = args.onnx_test
+    if _onnx_test:
+        for d in glob.glob(os.path.join(test_onnx_common.generated_dir, "test_operator_*")):
+            shutil.rmtree(d)
+    common.UNITTEST_ARGS = [sys.argv[0]] + remaining
     run_tests()

@@ -13,11 +13,7 @@ import shutil
 from onnx import numpy_helper
 from test_caffe2_common import run_generated_test
 import google.protobuf.text_format
-
-
-_generated_dir = os.path.join(os.path.dirname(
-    os.path.realpath(__file__)), os.pardir, "repos", "onnx", "onnx",
-    "backend", "test", "data", "generated")
+import test_onnx_common
 
 
 _fail_test_dir = os.path.join(os.path.dirname(
@@ -28,7 +24,8 @@ _expect_dir = os.path.join(os.path.dirname(
     os.path.realpath(__file__)), "expect")
 
 
-def collect_generated_testcases(root_dir=_generated_dir, verbose=False, fail_dir=None, expect=True):
+def collect_generated_testcases(root_dir=test_onnx_common.generated_dir,
+                                verbose=False, fail_dir=None, expect=True):
     total_pass = 0
     total_fail = 0
     for d in os.listdir(root_dir):
