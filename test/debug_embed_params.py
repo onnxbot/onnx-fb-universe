@@ -13,6 +13,7 @@ import torch.autograd.function as function
 
 import onnx
 import onnx_caffe2.backend as c2
+from test_pytorch_common import flatten
 
 
 torch.set_default_tensor_type('torch.FloatTensor')
@@ -21,10 +22,6 @@ try:
 except ImportError:
     print('Cannot import torch, hence caffe2-torch test will not run.')
     sys.exit(0)
-
-
-def _flatten(x):
-    return tuple(function._iter_filter(lambda o: isinstance(o, Variable) or torch.is_tensor(o))(x))
 
 
 def test_embed_params(proto, model, input, state_dict=None, use_gpu=True):
@@ -51,7 +48,7 @@ def test_embed_params(proto, model, input, state_dict=None, use_gpu=True):
       parameters = list(model.state_dict().values())
 
     W = {}
-    for k, v in zip(model_def.graph.input, _flatten((input, parameters))):
+    for k, v in zip(model_def.graph.input, flatten((input, parameters))):
       if isinstance(v, Variable):
         W[k.name] = v.data.cpu().numpy()
       else:
