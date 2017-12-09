@@ -6,9 +6,11 @@ export TOP_DIR=$(dirname $(dirname $(readlink -e "${BASH_SOURCE[0]}")))
 
 export OS="$(uname)"
 
-# setup ccache for OSX
+# setup ccache
 if [[ "$OS" == "Darwin" ]]; then
     export PATH="/usr/local/opt/ccache/libexec:$PATH"
+else
+    export PATH="/usr/lib/ccache:$PATH"
 fi
 
 # setup virtualenv
