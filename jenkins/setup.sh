@@ -18,6 +18,7 @@ else
         ln -sf "$(which ccache)" "$TOP_DIR/ccache/c++"
         ln -sf "$(which ccache)" "$TOP_DIR/ccache/gcc"
         ln -sf "$(which ccache)" "$TOP_DIR/ccache/g++"
+        ln -sf "$(which ccache)" "$TOP_DIR/ccache/x86_64-linux-gnu-gcc"
         export PATH="$TOP_DIR/ccache:$PATH"
     fi
 fi
