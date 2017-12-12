@@ -229,12 +229,11 @@ class TestOperators(TestCase):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument('--onnx-test', action='store_true', default=False)
-    args, remaining = parser.parse_known_args()
-    _onnx_test = args.onnx_test
+    onnx_test_flag = '--onnx-test'
+    _onnx_test = onnx_test_flag in common.UNITTEST_ARGS
+    if onnx_test_flag in common.UNITTEST_ARGS:
+        common.UNITTEST_ARGS.remove(onnx_test_flag)
     if _onnx_test:
-        for d in glob.glob(os.path.join(test_onnx_common.generated_dir, "test_operator_*")):
+        for d in glob.glob(os.path.join(test_onnx_common.pytorch_operator_dir, "test_operator_*")):
             shutil.rmtree(d)
-    common.UNITTEST_ARGS = [sys.argv[0]] + remaining
     run_tests()

@@ -14,6 +14,9 @@ onnx_model_dir = os.path.join(os.path.dirname(
 pytorch_converted_dir = os.path.join(onnx_model_dir, "pytorch-converted")
 
 
+pytorch_operator_dir = os.path.join(onnx_model_dir, "pytorch-operator")
+
+
 def output_dir(test_name, root_dir=pytorch_converted_dir):
     output_dir = os.path.join(root_dir, test_name)
     if not os.path.exists(output_dir):
