@@ -18,6 +18,9 @@ graph {
       ints: 1
       ints: 1
       ints: 1
+      ints: 1
+      ints: 1
+      ints: 1
       type: INTS
     }
     attribute {

@@ -66,7 +66,7 @@ def convert_tests(testcases, sets=1):
             onnx_model = onnx.load_from_string(f.getvalue())
             onnx.checker.check_model(onnx_model)
             onnx.helper.strip_doc_string(onnx_model)
-            output_dir = os.path.join(test_onnx_common.generated_dir, test_name)
+            output_dir = os.path.join(test_onnx_common.pytorch_converted_dir, test_name)
 
             if os.path.exists(output_dir):
                 shutil.rmtree(output_dir)
@@ -94,7 +94,7 @@ def convert_tests(testcases, sets=1):
 
     print("Collect {} test cases from PyTorch repo, failed to export {} cases.".format(
         len(testcases), failed))
-    print("Generated cases are stored in {}.".format(test_onnx_common.generated_dir))
+    print("PyTorch converted cases are stored in {}.".format(test_onnx_common.pytorch_converted_dir))
 
 if __name__ == '__main__':
     testcases = module_tests + new_module_tests

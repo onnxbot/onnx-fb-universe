@@ -6,12 +6,15 @@ from __future__ import unicode_literals
 import os
 
 
-generated_dir = os.path.join(os.path.dirname(
+onnx_model_dir = os.path.join(os.path.dirname(
     os.path.realpath(__file__)), os.pardir, "repos", "onnx", "onnx",
-    "backend", "test", "data", "generated")
+    "backend", "test", "data", "model")
 
 
-def output_dir(test_name, root_dir=generated_dir):
+pytorch_converted_dir = os.path.join(onnx_model_dir, "pytorch-converted")
+
+
+def output_dir(test_name, root_dir=pytorch_converted_dir):
     output_dir = os.path.join(root_dir, test_name)
     if not os.path.exists(output_dir):
         return output_dir

@@ -24,7 +24,7 @@ _expect_dir = os.path.join(os.path.dirname(
     os.path.realpath(__file__)), "expect")
 
 
-def collect_generated_testcases(root_dir=test_onnx_common.generated_dir,
+def collect_generated_testcases(root_dir=test_onnx_common.pytorch_converted_dir,
                                 verbose=False, fail_dir=None, expect=True):
     total_pass = 0
     total_fail = 0
