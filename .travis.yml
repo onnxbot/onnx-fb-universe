@@ -23,5 +23,5 @@ after_failure:
 
 cache:
   - directories:
-    - $HOME/.cache
+    - $HOME/.cache/pb
     - $HOME/.ccache
