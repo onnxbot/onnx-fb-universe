@@ -24,11 +24,12 @@ onnx-fb-builds
 
 # Test
 ## Test Script
-This repo contains several test scripts in `test` folder.
+This repo contains several test scripts in [test](https://github.com/onnxbot/onnx-fb-universe/tree/master/test) folder.
 * `test_caffe2.py`: PyTorch ==> ONNX ==> Caffe2 end-to-end tests, in which the decimal precision is checked.
 * `test_models.py`: PyTorch ==> ONNX model tests, check the output ONNX graph with expected files.
 * `test_operators.py`: PyTorch ==> ONNX operator tests, check the output ONNX graph with expected files.
-* `test_verify.py`: PyTorch ==> ONNX verification tests, check the exporting fails in certain conditions.
+* `test_verify.py`: PyTorch ==> ONNX verification tests, check the exporting raises exceptions in certain conditions.
+* `test_pytorch_helper.py`: PyTorch ==> ONNX helper tests, check the pytorch related helper functions.
 
 To update the `expected` files, please add flag `--accept` to the end of the command.
 
@@ -47,9 +48,18 @@ python test/test_operators.py --onnx-test
 ## Check the Generated Tests
 All the generated ONNX backend test data is stored in `repos/onnx/onnx/backend/test/data/model`.
 
-But the generated test cases may not pass end-to-end tests, so we have another script `filter_generated_test.py` to check whether the cases are passed or not, and the failed data will be moved
-to `test/failed/generated`.
+But the generated test cases may not pass end-to-end tests, so we have another script `filter_generated_test.py`
+to check whether the cases are passed or not, and the failed data will be moved to
+[test/failed/generated](https://github.com/onnxbot/onnx-fb-universe/tree/master/test/fail/generated).
+
 `filter_generated_test.py` supports the following flags:
 * `-v`: verbose
 * `--delete`: delete failed test cases, by default, they are moved to `test/failed/generated`.
 * `--no-expect`: do not generate expect files for each test, by default, expected files are generated in `test/expect` folder for debugging purpose.
+
+## More Docs
+* [ONNX IR spec](https://github.com/onnx/onnx/blob/master/docs/IR.md)
+* [ONNX operator spec](https://github.com/onnx/onnx/blob/master/docs/Operators.md)
+* [ONNX tutorials](https://github.com/onnx/tutorials)
+* [PyTorch docs](http://pytorch.org/docs/)
+* [Caffe2 docs](https://caffe2.ai/docs/)
