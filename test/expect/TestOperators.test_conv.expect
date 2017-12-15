@@ -5,7 +5,7 @@ graph {
   node {
     input: "0"
     input: "1"
-    output: "3"
+    output: "2"
     op_type: "Conv"
     attribute {
       name: "kernel_shape"
@@ -94,7 +94,7 @@ graph {
     }
   }
   output {
-    name: "3"
+    name: "2"
     type {
       tensor_type {
         elem_type: FLOAT

@@ -1069,7 +1069,7 @@ graph {
     input: "92"
     input: "33"
     input: "34"
-    output: "95"
+    output: "93"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -1090,34 +1090,34 @@ graph {
       name: "transB"
       i: 1
       type: INT
+    }
+  }
+  node {
+    input: "93"
+    output: "94"
+    op_type: "Relu"
+  }
+  node {
+    input: "94"
+    output: "95"
+    output: "96"
+    op_type: "Dropout"
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "ratio"
+      f: 0.5
+      type: FLOAT
     }
   }
   node {
     input: "95"
-    output: "96"
-    op_type: "Relu"
-  }
-  node {
-    input: "96"
-    output: "97"
-    output: "98"
-    op_type: "Dropout"
-    attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "ratio"
-      f: 0.5
-      type: FLOAT
-    }
-  }
-  node {
-    input: "97"
     input: "35"
     input: "36"
-    output: "101"
+    output: "97"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -1141,14 +1141,14 @@ graph {
     }
   }
   node {
-    input: "101"
-    output: "102"
+    input: "97"
+    output: "98"
     op_type: "Relu"
   }
   node {
-    input: "102"
-    output: "103"
-    output: "104"
+    input: "98"
+    output: "99"
+    output: "100"
     op_type: "Dropout"
     attribute {
       name: "is_test"
@@ -1162,10 +1162,10 @@ graph {
     }
   }
   node {
-    input: "103"
+    input: "99"
     input: "37"
     input: "38"
-    output: "107"
+    output: "101"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -1859,7 +1859,7 @@ graph {
     }
   }
   output {
-    name: "107"
+    name: "101"
     type {
       tensor_type {
         elem_type: FLOAT

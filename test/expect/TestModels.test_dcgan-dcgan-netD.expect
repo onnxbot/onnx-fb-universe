@@ -18,19 +18,19 @@ graph torch-jit-export (
   %16[FLOAT, 512]
   %17[FLOAT, 1x512x4x4]
 ) {
-  %19 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%0, %1)
-  %20 = LeakyRelu[alpha = 0.200000002980232](%19)
-  %22 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%20, %2)
-  %23 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%22, %3, %4, %5, %6)
-  %24 = LeakyRelu[alpha = 0.200000002980232](%23)
-  %26 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%24, %7)
-  %27 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%26, %8, %9, %10, %11)
+  %18 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%0, %1)
+  %19 = LeakyRelu[alpha = 0.200000002980232](%18)
+  %20 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%19, %2)
+  %21 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%20, %3, %4, %5, %6)
+  %22 = LeakyRelu[alpha = 0.200000002980232](%21)
+  %23 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%22, %7)
+  %24 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%23, %8, %9, %10, %11)
+  %25 = LeakyRelu[alpha = 0.200000002980232](%24)
+  %26 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%25, %12)
+  %27 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%26, %13, %14, %15, %16)
   %28 = LeakyRelu[alpha = 0.200000002980232](%27)
-  %30 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [1, 1, 1, 1], strides = [2, 2]](%28, %12)
-  %31 = BatchNormalization[consumed_inputs = [0, 0, 0, 1, 1], epsilon = 9.99999974737875e-06, is_test = 1, momentum = 0.899999976158142](%30, %13, %14, %15, %16)
-  %32 = LeakyRelu[alpha = 0.200000002980232](%31)
-  %34 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [0, 0, 0, 0], strides = [1, 1]](%32, %17)
-  %35 = Sigmoid(%34)
-  %36 = Reshape[shape = [-1, 1]](%35)
-  return %36
+  %29 = Conv[dilations = [1, 1], group = 1, kernel_shape = [4, 4], pads = [0, 0, 0, 0], strides = [1, 1]](%28, %17)
+  %30 = Sigmoid(%29)
+  %31 = Reshape[shape = [-1, 1]](%30)
+  return %31
 }

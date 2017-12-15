@@ -397,7 +397,7 @@ graph {
     input: "36"
     input: "11"
     input: "12"
-    output: "40"
+    output: "38"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -421,14 +421,14 @@ graph {
     }
   }
   node {
-    input: "40"
-    output: "41"
+    input: "38"
+    output: "39"
     op_type: "Relu"
   }
   node {
-    input: "41"
-    output: "42"
-    output: "43"
+    input: "39"
+    output: "40"
+    output: "41"
     op_type: "Dropout"
     attribute {
       name: "is_test"
@@ -442,10 +442,10 @@ graph {
     }
   }
   node {
-    input: "42"
+    input: "40"
     input: "13"
     input: "14"
-    output: "46"
+    output: "42"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -469,15 +469,15 @@ graph {
     }
   }
   node {
-    input: "46"
-    output: "47"
+    input: "42"
+    output: "43"
     op_type: "Relu"
   }
   node {
-    input: "47"
+    input: "43"
     input: "15"
     input: "16"
-    output: "50"
+    output: "44"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -786,7 +786,7 @@ graph {
     }
   }
   output {
-    name: "50"
+    name: "44"
     type {
       tensor_type {
         elem_type: FLOAT

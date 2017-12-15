@@ -105,10 +105,13 @@ class TestOperators(TestCase):
         x = Variable(torch.Tensor([0]), requires_grad=True)
         self.assertONNX(lambda x: x.view(1, 1), x)
 
-    @unittest.skip("Indexing is broken by #3725")
     def test_index(self):
         x = Variable(torch.Tensor([[0]]), requires_grad=True)
         self.assertONNX(lambda x: x[0], x)
+
+    def test_type_as(self):
+        x = Variable(torch.Tensor([0]), requires_grad=True)
+        self.assertONNX(lambda x: x.type_as(x), x)
 
     def test_addconstant(self):
         x = Variable(torch.DoubleTensor(2, 3), requires_grad=True)

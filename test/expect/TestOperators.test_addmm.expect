@@ -6,7 +6,7 @@ graph {
     input: "0"
     input: "1"
     input: "2"
-    output: "4"
+    output: "3"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -27,8 +27,8 @@ graph {
   node {
     input: "0"
     input: "1"
-    input: "4"
-    output: "5"
+    input: "3"
+    output: "4"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -88,7 +88,7 @@ graph {
     }
   }
   output {
-    name: "5"
+    name: "4"
     type {
       tensor_type {
         elem_type: FLOAT

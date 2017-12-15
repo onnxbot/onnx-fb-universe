@@ -1597,7 +1597,7 @@ graph {
     input: "172"
     input: "97"
     input: "98"
-    output: "175"
+    output: "173"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -1618,34 +1618,34 @@ graph {
       name: "transB"
       i: 1
       type: INT
+    }
+  }
+  node {
+    input: "173"
+    output: "174"
+    op_type: "Relu"
+  }
+  node {
+    input: "174"
+    output: "175"
+    output: "176"
+    op_type: "Dropout"
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "ratio"
+      f: 0.5
+      type: FLOAT
     }
   }
   node {
     input: "175"
-    output: "176"
-    op_type: "Relu"
-  }
-  node {
-    input: "176"
-    output: "177"
-    output: "178"
-    op_type: "Dropout"
-    attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "ratio"
-      f: 0.5
-      type: FLOAT
-    }
-  }
-  node {
-    input: "177"
     input: "99"
     input: "100"
-    output: "181"
+    output: "177"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -1669,14 +1669,14 @@ graph {
     }
   }
   node {
-    input: "181"
-    output: "182"
+    input: "177"
+    output: "178"
     op_type: "Relu"
   }
   node {
-    input: "182"
-    output: "183"
-    output: "184"
+    input: "178"
+    output: "179"
+    output: "180"
     op_type: "Dropout"
     attribute {
       name: "is_test"
@@ -1690,10 +1690,10 @@ graph {
     }
   }
   node {
-    input: "183"
+    input: "179"
     input: "101"
     input: "102"
-    output: "187"
+    output: "181"
     op_type: "Gemm"
     attribute {
       name: "alpha"
@@ -3219,7 +3219,7 @@ graph {
     }
   }
   output {
-    name: "187"
+    name: "181"
     type {
       tensor_type {
         elem_type: FLOAT
