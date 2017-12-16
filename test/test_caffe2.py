@@ -8,7 +8,8 @@ import numpy as np
 import sys
 import unittest
 
-import onnx_caffe2
+import onnx_caffe2.backend as c2
+
 import onnx_pytorch
 import torch.onnx
 from torch import nn
@@ -31,7 +32,6 @@ import model_defs.word_language_model as word_language_model
 from model_defs.mnist import MNIST
 
 import onnx
-import onnx_caffe2.backend as c2
 
 from test_pytorch_common import skipIfTravis, skipIfNoLapack, skipIfNoCuda
 
