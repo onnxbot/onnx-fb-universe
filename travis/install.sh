@@ -2,4 +2,4 @@
 
 source "$(dirname $(readlink -e "${BASH_SOURCE[0]}"))/setup.sh"
 
-exec "$top_dir/install.sh"
+CMAKE_ARGS='-DUSE_ATEN=ON' exec "$top_dir/install.sh"
