@@ -7,7 +7,7 @@ script_path=$(python -c "import os; import sys; print(os.path.realpath(sys.argv[
 top_dir=$(dirname "$script_path")
 TEST_DIR="$top_dir/test"
 
-if [[ hash catchsegv >/dev/null ]]; then
+if hash catchsegv 2>/dev/null; then
     PYTHON="catchsegv python"
 else
     PYTHON="python"
