@@ -25,3 +25,7 @@ cache:
   - directories:
     - $HOME/.cache/pb
     - $HOME/.ccache
+
+branches:
+  except:
+    - /*auto-.*$/
