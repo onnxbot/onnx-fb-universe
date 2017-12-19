@@ -28,4 +28,4 @@ cache:
 
 branches:
   except:
-    - /*auto-.*$/
+    - /^auto-.*$/
