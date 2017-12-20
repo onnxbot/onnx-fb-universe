@@ -263,6 +263,15 @@ class TestOperators(TestCase):
         x = Variable(torch.randn(1, 2, 3, 4), requires_grad=True)
         self.assertONNX(nn.LogSoftmax(dim=2), x)
 
+    def test_pow(self):
+        x = Variable(torch.randn(1, 2, 3, 4), requires_grad=True)
+        y = Variable(torch.randn(1, 2, 3, 4), requires_grad=True)
+        self.assertONNX(lambda x, y: x.pow(y), (x, y))
+
+    def test_selu(self):
+        x = Variable(torch.randn(1, 2, 3, 4), requires_grad=True)
+        self.assertONNX(nn.SELU(), x)
+
 if __name__ == '__main__':
     onnx_test_flag = '--onnx-test'
     _onnx_test = onnx_test_flag in common.UNITTEST_ARGS
