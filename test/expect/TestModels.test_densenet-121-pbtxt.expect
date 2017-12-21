@@ -48,21 +48,6 @@ graph {
     output: "608"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -70,6 +55,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -111,21 +111,6 @@ graph {
     output: "611"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -133,6 +118,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -186,21 +186,6 @@ graph {
     output: "614"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -208,6 +193,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -272,21 +272,6 @@ graph {
     output: "618"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -294,6 +279,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -347,21 +347,6 @@ graph {
     output: "621"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -369,6 +354,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -433,21 +433,6 @@ graph {
     output: "625"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -455,6 +440,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -508,21 +508,6 @@ graph {
     output: "628"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -530,6 +515,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -594,21 +594,6 @@ graph {
     output: "632"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -616,6 +601,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -669,21 +669,6 @@ graph {
     output: "635"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -691,6 +676,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -755,21 +755,6 @@ graph {
     output: "639"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -777,6 +762,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -830,21 +830,6 @@ graph {
     output: "642"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -852,6 +837,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -916,21 +916,6 @@ graph {
     output: "646"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -938,6 +923,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -991,21 +991,6 @@ graph {
     output: "649"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1013,6 +998,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1077,21 +1077,6 @@ graph {
     output: "653"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1099,6 +1084,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1177,21 +1177,6 @@ graph {
     output: "657"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1199,6 +1184,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1252,21 +1252,6 @@ graph {
     output: "660"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1274,6 +1259,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1338,21 +1338,6 @@ graph {
     output: "664"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1360,6 +1345,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1413,21 +1413,6 @@ graph {
     output: "667"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1435,6 +1420,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1499,21 +1499,6 @@ graph {
     output: "671"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1521,6 +1506,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1574,21 +1574,6 @@ graph {
     output: "674"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1596,6 +1581,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1660,21 +1660,6 @@ graph {
     output: "678"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1682,6 +1667,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1735,21 +1735,6 @@ graph {
     output: "681"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1757,6 +1742,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1821,21 +1821,6 @@ graph {
     output: "685"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1843,6 +1828,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1896,21 +1896,6 @@ graph {
     output: "688"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -1918,6 +1903,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -1982,21 +1982,6 @@ graph {
     output: "692"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2004,6 +1989,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2057,21 +2057,6 @@ graph {
     output: "695"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2079,6 +2064,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2143,21 +2143,6 @@ graph {
     output: "699"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2165,6 +2150,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2218,21 +2218,6 @@ graph {
     output: "702"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2240,6 +2225,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2304,21 +2304,6 @@ graph {
     output: "706"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2326,6 +2311,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2379,21 +2379,6 @@ graph {
     output: "709"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2401,6 +2386,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2465,21 +2465,6 @@ graph {
     output: "713"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2487,6 +2472,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2540,21 +2540,6 @@ graph {
     output: "716"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2562,6 +2547,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2626,21 +2626,6 @@ graph {
     output: "720"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2648,6 +2633,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2701,21 +2701,6 @@ graph {
     output: "723"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2723,6 +2708,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2787,21 +2787,6 @@ graph {
     output: "727"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2809,6 +2794,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2862,21 +2862,6 @@ graph {
     output: "730"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2884,6 +2869,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -2948,21 +2948,6 @@ graph {
     output: "734"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -2970,6 +2955,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3023,21 +3023,6 @@ graph {
     output: "737"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3045,6 +3030,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3109,21 +3109,6 @@ graph {
     output: "741"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3131,6 +3116,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3209,21 +3209,6 @@ graph {
     output: "745"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3231,6 +3216,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3284,21 +3284,6 @@ graph {
     output: "748"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3306,6 +3291,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3370,21 +3370,6 @@ graph {
     output: "752"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3392,6 +3377,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3445,21 +3445,6 @@ graph {
     output: "755"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3467,6 +3452,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3531,21 +3531,6 @@ graph {
     output: "759"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3553,6 +3538,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3606,21 +3606,6 @@ graph {
     output: "762"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3628,6 +3613,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3692,21 +3692,6 @@ graph {
     output: "766"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3714,6 +3699,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3767,21 +3767,6 @@ graph {
     output: "769"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3789,6 +3774,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3853,21 +3853,6 @@ graph {
     output: "773"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3875,6 +3860,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -3928,21 +3928,6 @@ graph {
     output: "776"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -3950,6 +3935,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4014,21 +4014,6 @@ graph {
     output: "780"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4036,6 +4021,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4089,21 +4089,6 @@ graph {
     output: "783"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4111,6 +4096,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4175,21 +4175,6 @@ graph {
     output: "787"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4197,6 +4182,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4250,21 +4250,6 @@ graph {
     output: "790"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4272,6 +4257,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4336,21 +4336,6 @@ graph {
     output: "794"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4358,6 +4343,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4411,21 +4411,6 @@ graph {
     output: "797"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4433,6 +4418,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4497,21 +4497,6 @@ graph {
     output: "801"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4519,6 +4504,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4572,21 +4572,6 @@ graph {
     output: "804"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4594,6 +4579,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4658,21 +4658,6 @@ graph {
     output: "808"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4680,6 +4665,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4733,21 +4733,6 @@ graph {
     output: "811"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4755,6 +4740,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4819,21 +4819,6 @@ graph {
     output: "815"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4841,6 +4826,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4894,21 +4894,6 @@ graph {
     output: "818"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -4916,6 +4901,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -4980,21 +4980,6 @@ graph {
     output: "822"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5002,6 +4987,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5055,21 +5055,6 @@ graph {
     output: "825"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5077,6 +5062,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5141,21 +5141,6 @@ graph {
     output: "829"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5163,6 +5148,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5216,21 +5216,6 @@ graph {
     output: "832"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5238,6 +5223,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5302,21 +5302,6 @@ graph {
     output: "836"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5324,6 +5309,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5377,21 +5377,6 @@ graph {
     output: "839"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5399,6 +5384,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5463,21 +5463,6 @@ graph {
     output: "843"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5485,6 +5470,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5538,21 +5538,6 @@ graph {
     output: "846"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5560,6 +5545,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5624,21 +5624,6 @@ graph {
     output: "850"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5646,6 +5631,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5699,21 +5699,6 @@ graph {
     output: "853"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5721,6 +5706,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5785,21 +5785,6 @@ graph {
     output: "857"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5807,6 +5792,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5860,21 +5860,6 @@ graph {
     output: "860"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5882,6 +5867,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -5946,21 +5946,6 @@ graph {
     output: "864"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -5968,6 +5953,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6021,21 +6021,6 @@ graph {
     output: "867"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6043,6 +6028,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6107,21 +6107,6 @@ graph {
     output: "871"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6129,6 +6114,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6182,21 +6182,6 @@ graph {
     output: "874"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6204,6 +6189,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6268,21 +6268,6 @@ graph {
     output: "878"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6290,6 +6275,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6343,21 +6343,6 @@ graph {
     output: "881"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6365,6 +6350,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6429,21 +6429,6 @@ graph {
     output: "885"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6451,6 +6436,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6504,21 +6504,6 @@ graph {
     output: "888"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6526,6 +6511,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6590,21 +6590,6 @@ graph {
     output: "892"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6612,6 +6597,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6665,21 +6665,6 @@ graph {
     output: "895"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6687,6 +6672,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6751,21 +6751,6 @@ graph {
     output: "899"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6773,6 +6758,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6826,21 +6826,6 @@ graph {
     output: "902"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6848,6 +6833,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6912,21 +6912,6 @@ graph {
     output: "906"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -6934,6 +6919,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -6987,21 +6987,6 @@ graph {
     output: "909"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7009,6 +6994,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7073,21 +7073,6 @@ graph {
     output: "913"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7095,6 +7080,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7173,21 +7173,6 @@ graph {
     output: "917"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7195,6 +7180,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7248,21 +7248,6 @@ graph {
     output: "920"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7270,6 +7255,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7334,21 +7334,6 @@ graph {
     output: "924"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7356,6 +7341,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7409,21 +7409,6 @@ graph {
     output: "927"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7431,6 +7416,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7495,21 +7495,6 @@ graph {
     output: "931"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7517,6 +7502,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7570,21 +7570,6 @@ graph {
     output: "934"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7592,6 +7577,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7656,21 +7656,6 @@ graph {
     output: "938"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7678,6 +7663,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7731,21 +7731,6 @@ graph {
     output: "941"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7753,6 +7738,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7817,21 +7817,6 @@ graph {
     output: "945"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7839,6 +7824,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7892,21 +7892,6 @@ graph {
     output: "948"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -7914,6 +7899,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -7978,21 +7978,6 @@ graph {
     output: "952"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8000,6 +7985,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8053,21 +8053,6 @@ graph {
     output: "955"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8075,6 +8060,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8139,21 +8139,6 @@ graph {
     output: "959"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8161,6 +8146,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8214,21 +8214,6 @@ graph {
     output: "962"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8236,6 +8221,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8300,21 +8300,6 @@ graph {
     output: "966"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8322,6 +8307,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8375,21 +8375,6 @@ graph {
     output: "969"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8397,6 +8382,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8461,21 +8461,6 @@ graph {
     output: "973"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8483,6 +8468,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8536,21 +8536,6 @@ graph {
     output: "976"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8558,6 +8543,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8622,21 +8622,6 @@ graph {
     output: "980"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8644,6 +8629,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8697,21 +8697,6 @@ graph {
     output: "983"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8719,6 +8704,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8783,21 +8783,6 @@ graph {
     output: "987"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8805,6 +8790,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8858,21 +8858,6 @@ graph {
     output: "990"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8880,6 +8865,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -8944,21 +8944,6 @@ graph {
     output: "994"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -8966,6 +8951,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9019,21 +9019,6 @@ graph {
     output: "997"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9041,6 +9026,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9105,21 +9105,6 @@ graph {
     output: "1001"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9127,6 +9112,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9180,21 +9180,6 @@ graph {
     output: "1004"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9202,6 +9187,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9266,21 +9266,6 @@ graph {
     output: "1008"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9288,6 +9273,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9341,21 +9341,6 @@ graph {
     output: "1011"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9363,6 +9348,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9427,21 +9427,6 @@ graph {
     output: "1015"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9449,6 +9434,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9502,21 +9502,6 @@ graph {
     output: "1018"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9524,6 +9509,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9588,21 +9588,6 @@ graph {
     output: "1022"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9610,6 +9595,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9663,21 +9663,6 @@ graph {
     output: "1025"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9685,6 +9670,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
@@ -9749,21 +9749,6 @@ graph {
     output: "1029"
     op_type: "BatchNormalization"
     attribute {
-      name: "is_test"
-      i: 1
-      type: INT
-    }
-    attribute {
-      name: "epsilon"
-      f: 9.99999974737875e-06
-      type: FLOAT
-    }
-    attribute {
-      name: "momentum"
-      f: 0.899999976158142
-      type: FLOAT
-    }
-    attribute {
       name: "consumed_inputs"
       ints: 0
       ints: 0
@@ -9771,6 +9756,21 @@ graph {
       ints: 1
       ints: 1
       type: INTS
+    }
+    attribute {
+      name: "epsilon"
+      f: 9.99999974737875e-06
+      type: FLOAT
+    }
+    attribute {
+      name: "is_test"
+      i: 1
+      type: INT
+    }
+    attribute {
+      name: "momentum"
+      f: 0.899999976158142
+      type: FLOAT
     }
   }
   node {
