@@ -44,7 +44,7 @@ graph {
     dims: 2
     data_type: FLOAT
     name: "1"
-    raw_data: "Ly<>j\3709?"
+    raw_data: "\217~,?b\265\251>"
   }
   initializer {
     dims: 2
