@@ -4,8 +4,8 @@ When I exported your model with different inputs, the result was different.
 ERROR: In embedded parameter '1': Arrays are not equal
 
 (mismatch 100.0%)
- x: array([ 3.], dtype=float32)
- y: array([ 4.], dtype=float32)
+ x: array([3.], dtype=float32)
+ y: array([4.], dtype=float32)
 
   * A difference in embedded parameters usually means that
     your model is updating parameters/buffers even in inference
