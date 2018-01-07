@@ -17,3 +17,6 @@ wget -qO- "https://github.com/google/protobuf/releases/download/v$pb_version/pro
 ccache -z
 cd "$pb_dir" && ./configure && make && make check && sudo make install && sudo ldconfig
 ccache -s
+
+# Update all existing python packages
+pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
