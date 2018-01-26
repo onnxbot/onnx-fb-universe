@@ -12,7 +12,7 @@ import onnx_caffe2
 import onnx_pytorch
 import torch.onnx
 from torch import nn
-from torch.autograd import Variable
+from torch.autograd import Variable, function
 import torch.utils.model_zoo as model_zoo
 from debug_embed_params import test_embed_params
 import io
@@ -103,7 +103,10 @@ class TestCaffe2Backend(unittest.TestCase):
 
     def convert_cuda(self, model, input):
         cuda_model = model.cuda()
-        cuda_input = input.cuda()
+        # input might be nested - we want to move everything to GPU
+        cuda_input = function._nested_map(
+                lambda o: isinstance(o, Variable) or torch.is_tensor(o),
+                lambda o: o.cuda())(input)
         return cuda_model, cuda_input
 
     def run_debug_test(self, model, train, batch_size, state_dict=None,
@@ -178,7 +181,7 @@ class TestCaffe2Backend(unittest.TestCase):
         input = Variable(torch.randn(BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.randn(BATCH_SIZE, HIDDEN_SIZE))
         c0 = Variable(torch.randn(BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)), use_gpu=False)
 
     def test_lstm_single_layer(self):
         # relatively prime for ease of debugging
@@ -191,7 +194,7 @@ class TestCaffe2Backend(unittest.TestCase):
         input = Variable(torch.randn(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
         c0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)), use_gpu=False)
 
     def test_lstm_multi_layer(self):
         # relatively prime for ease of debugging
@@ -204,7 +207,7 @@ class TestCaffe2Backend(unittest.TestCase):
         input = Variable(torch.randn(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
         c0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)), use_gpu=False)
 
     def test_lstm_no_initial_state(self):
         # relatively prime for ease of debugging
@@ -215,7 +218,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
         model = LstmDiscardingCellState(INPUT_SIZE, HIDDEN_SIZE, LAYERS)
         input = Variable(torch.randn(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input,))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input,), use_gpu=False)
 
     @skip("we don't even reach the good code...")
     def test_lstm_bidirectional(self):
@@ -229,7 +232,7 @@ class TestCaffe2Backend(unittest.TestCase):
         input = Variable(torch.randn(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
         c0 = Variable(torch.randn(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, (h0, c0)), use_gpu=False)
 
     def test_gru_cell(self):
         # relatively prime for ease of debugging
@@ -240,7 +243,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
         input = Variable(torch.zeros(BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.zeros(BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0), use_gpu=False)
 
     def test_gru_single_layer(self):
         # relatively prime for ease of debugging
@@ -253,7 +256,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
         input = Variable(torch.zeros(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.zeros(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0), use_gpu=False)
 
     def test_gru_multi_layer(self):
         # relatively prime for ease of debugging
@@ -266,7 +269,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
         input = Variable(torch.zeros(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.zeros(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0), use_gpu=False)
 
     def test_gru_no_initial_state(self):
         # relatively prime for ease of debugging
@@ -278,7 +281,7 @@ class TestCaffe2Backend(unittest.TestCase):
         model = nn.GRU(INPUT_SIZE, HIDDEN_SIZE, LAYERS)
 
         input = Variable(torch.zeros(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input,))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input,), use_gpu=False)
 
     @skip("we don't even reach the good code...")
     def test_gru_bidirectional(self):
@@ -292,7 +295,7 @@ class TestCaffe2Backend(unittest.TestCase):
 
         input = Variable(torch.zeros(SEQUENCE_LENGTH, BATCH_SIZE, INPUT_SIZE))
         h0 = Variable(torch.zeros(LAYERS, BATCH_SIZE, HIDDEN_SIZE))
-        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0))
+        self.run_model_test(model, train=False, batch_size=BATCH_SIZE, input=(input, h0), use_gpu=False)
 
     def test_alexnet(self):
         alexnet = AlexNet()

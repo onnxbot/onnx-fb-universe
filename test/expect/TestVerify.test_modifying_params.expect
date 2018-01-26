@@ -1,12 +1,1 @@
-When I exported your model with different inputs, the result was different.
-(To get more information, run torch.onnx.verify(..., verbose=True))
-----------------------------------------------------------------------
-ERROR: In embedded parameter '1': Arrays are not equal
-
-(mismatch 100.0%)
- x: array([3.], dtype=float32)
- y: array([4.], dtype=float32)
-
-  * A difference in embedded parameters usually means that
-    your model is updating parameters/buffers even in inference
-    mode.  Look for a buggy nn.Module which isn't respecting train().
+When I exported your model with different inputs, the result

@@ -1,18 +1,1 @@
-When I exported your model with different inputs, the result was different.
-(To get more information, run torch.onnx.verify(..., verbose=True))
-----------------------------------------------------------------------
-ERROR: Strings are not equal:
-
-  graph torch-jit-export (
-    %0[FLOAT, 1x2]
-  ) {
--   %1 = Mul(%0, %0)
-?        ^^^
-+   %1 = Add(%0, %0)
-?        ^^^
-    return %1
-  }
-
-  * A difference in model structure usually means that
-    your model has dynamic control flow.  These models are not
-    currently supported by the exporter.
+When I exported your model with different inputs, the result

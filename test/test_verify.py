@@ -17,7 +17,9 @@ class TestVerify(TestCase):
             verify(*args, **kwargs)
         except AssertionError as e:
             if str(e):
-                self.assertExpected(str(e))
+                # substring a small piece of string because the exact message
+                # depends on system's formatting settings
+                self.assertExpected(str(e)[:60])
                 return
             else:
                 raise
