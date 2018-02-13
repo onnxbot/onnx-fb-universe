@@ -23,8 +23,10 @@ _pip_install() {
     fi
 }
 
+pip install ninja
+
 # Install caffe2
-_pip_install -b "$BUILD_DIR/caffe2" "file://$REPOS_DIR/caffe2#egg=caffe2"
+_pip_install -e "$REPOS_DIR/caffe2"
 
 # Install onnx
 _pip_install -e "$REPOS_DIR/onnx"
