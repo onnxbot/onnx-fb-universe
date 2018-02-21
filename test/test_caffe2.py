@@ -9,8 +9,6 @@ import sys
 import unittest
 import itertools
 
-import onnx_caffe2
-import onnx_pytorch
 import torch.onnx
 from torch import nn
 from torch.autograd import Variable, function
@@ -35,9 +33,10 @@ from model_defs.lstm_discarding_cell_state import LstmDiscardingCellState
 from model_defs.rnn_model_with_packed_sequence import RnnModelWithPackedSequence
 
 import onnx
-import onnx_caffe2.backend as c2
+import caffe2.python.onnx.backend as c2
 
 from test_pytorch_common import skipIfTravis, skipIfNoLapack, skipIfNoCuda
+import verify
 
 skip = unittest.skip
 
@@ -45,7 +44,7 @@ skip = unittest.skip
 def skipIfEmbed(func):
     def wrapper(self):
         if self.embed_params:
-            raise unittest.SkipTest("Skip onnx-pytorch verify test")
+            raise unittest.SkipTest("Skip embed_params verify test")
         return func(self)
     return wrapper
 
@@ -171,7 +170,7 @@ class TestCaffe2Backend(unittest.TestCase):
             model, input = self.convert_cuda(model, input)
 
         # Verify the model runs the same in Caffe2
-        onnx_pytorch.verify.verify(model, input, c2)
+        verify.verify(model, input, c2)
 
     def run_model_test(self, model, train, batch_size, state_dict=None,
                        input=None, use_gpu=True):
