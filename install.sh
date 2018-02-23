@@ -11,7 +11,11 @@ mkdir -p "$BUILD_DIR"
 
 _pip_install() {
     if [[ -n "$CI" ]]; then
-        ccache -z
+        if [[ -n "${SCCACHE_BUCKET}" ]]; then
+            sccache --show-stats
+        else
+            ccache -z
+        fi
     fi
     if [[ -n "$CI" ]]; then
         time pip install "$@"
@@ -19,7 +23,11 @@ _pip_install() {
         pip install "$@"
     fi
     if [[ -n "$CI" ]]; then
-        ccache -s
+        if [[ -n "${SCCACHE_BUCKET}" ]]; then
+            sccache --show-stats
+        else
+            ccache -s
+        fi
     fi
 }
 
