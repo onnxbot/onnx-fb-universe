@@ -11,9 +11,7 @@ mkdir -p "$BUILD_DIR"
 
 _pip_install() {
     if [[ -n "$CI" ]]; then
-        if [[ -n "${SCCACHE_BUCKET}" ]]; then
-            sccache --show-stats
-        else
+        if [[ -z "${SCCACHE_BUCKET}" ]]; then
             ccache -z
         fi
     fi
