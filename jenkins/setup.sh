@@ -20,7 +20,7 @@ if [[ "$OS" == "Darwin" ]]; then
     export PATH="/usr/local/opt/ccache/libexec:$PATH"
 else
     if [[ -n "${SCCACHE_BUCKET}" ]]; then
-        if hash sccache 2>/dev/null; then
+        if ! hash sccache 2>/dev/null; then
             echo "SCCACHE_BUCKET is set but sccache executable is not found"
             exit 1
         fi
