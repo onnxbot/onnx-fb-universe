@@ -113,7 +113,8 @@ def download_onnx_model(model_name, zoo_dir, use_cache=True):
         upload_onnx_model(model_name, zoo_dir, backup=True)
     except Exception as e:
         print('Failed to download/backup data for ONNX model {}: {}'.format(model_name, e))
-        os.makedirs(model_dir)
+        if not os.path.exists(model_dir):
+            os.makedirs(model_dir)
     finally:
         os.remove(download_file.name)
 
