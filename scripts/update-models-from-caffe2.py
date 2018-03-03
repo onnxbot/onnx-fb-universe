@@ -206,18 +206,18 @@ def onnx_verify(onnx_model, inputs, ref_outputs):
 
 
 model_mapping = {
-    #'bvlc_alexnet': 'bvlc_alexnet',
-    #'bvlc_googlenet': 'bvlc_googlenet',
-    #'bvlc_reference_caffenet': 'bvlc_reference_caffenet',
-    #'bvlc_reference_rcnn_ilsvrc13': 'bvlc_reference_rcnn_ilsvrc13',
-    #'densenet121': 'densenet121',
-    ##'finetune_flickr_style': 'finetune_flickr_style',
-    #'inception_v1': 'inception_v1',
-    #'inception_v2': 'inception_v2',
-    #'resnet50': 'resnet50',
-    #'shufflenet': 'shufflenet',
-    #'squeezenet': 'squeezenet_old',
-    #'vgg16': 'vgg16',
+    'bvlc_alexnet': 'bvlc_alexnet',
+    'bvlc_googlenet': 'bvlc_googlenet',
+    'bvlc_reference_caffenet': 'bvlc_reference_caffenet',
+    'bvlc_reference_rcnn_ilsvrc13': 'bvlc_reference_rcnn_ilsvrc13',
+    'densenet121': 'densenet121',
+    #'finetune_flickr_style': 'finetune_flickr_style',
+    'inception_v1': 'inception_v1',
+    'inception_v2': 'inception_v2',
+    'resnet50': 'resnet50',
+    'shufflenet': 'shufflenet',
+    'squeezenet': 'squeezenet_old',
+    'vgg16': 'vgg16',
     'vgg19': 'vgg19',
 }
 
