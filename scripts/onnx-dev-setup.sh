@@ -1,9 +1,16 @@
 #!/bin/bash
 
+# This script helps developers set up the ONNX and Caffe2 develop environment on devgpu.
+# It creates an virtualenv instance, and installs all the dependencies in this environment.
+# The script will creates a folder called onnx-dev folder under the $HOME directory.
+# onnx, pytorch and caffe2 are installed as submodules in $HOME/onnx-dev/onnx-fb-universe/repos.
+# Please source $HOME/onnx-dev/.onnx_env_init to initialize the development before starting developing.
+
+
+# TODO: support python 3.
+
 set -ex
 shopt -s expand_aliases
-RED='\033[0;31m'
-LIGHT_GREEN='\033[1;32m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
@@ -29,13 +36,13 @@ sudo yum install cmake -y
 sudo yum install autoconf asciidoc -y
 
 # Proxy setup
-alias with_proxy="HTTPS_PROXY=http://fwdproxy.any:8080 HTTP_PROXY=http://fwdproxy.any:8080 FTP_PROXY=http://fwdproxy.any:8080 https_proxy=http://fwdproxy.any:8080 http_proxy=http://fwdproxy.any:8080 ftp_proxy=http://fwdproxy.any:8080 http_no_proxy='\''*.facebook.com|*.tfbnw.net|*.fb.com'\'"
+alias with_proxy="HTTPS_PROXY=http://fwdproxy.any:8080 HTTP_PROXY=http://fwdproxy.any:8080 FTP_PROXY=http://fwdproxy.any:8080 https_proxy=http://fwdproxy.any:8080 http_proxy=http://fwdproxy.any:8080 ftp_proxy=http://fwdproxy.any:8080 http_no_proxy='*.facebook.com|*.tfbnw.net|*.fb.com'"
 
 # Set the name of virtualenv instance
 onnxroot="$HOME/onnx-dev"
 
 if [ -d "$onnxroot" ]; then
-  timestamp=`date "+%Y.%m.%d-%H.%M.%S"`
+  timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
   mv --backup=t "$onnxroot" "$onnxroot"."$timestamp"
 fi
 mkdir -p "$onnxroot"
@@ -44,6 +51,7 @@ venv="$onnxroot/onnxvenv"
 
 # Create a virtualenv, activate it, upgrade pip
 with_proxy virtualenv "$venv"
+# shellcheck disable=SC1090
 source "$venv/bin/activate"
 with_proxy pip install pip setuptools -U
 
@@ -86,9 +94,12 @@ fi
 
 # Creating a script that can be sourced in the future for the environmental variable
 touch "$onnx_init_file"
-echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH" >> "$onnx_init_file"
-echo "export PATH=~/ccache/lib:/usr/local/cuda/bin:$PATH" >> "$onnx_init_file"
-echo "export CUDA_NVCC_EXECUTABLE=~/ccache/cuda/nvcc" >> "$onnx_init_file"
+{
+  echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH";
+  echo "export PATH=~/ccache/lib:/usr/local/cuda/bin:$PATH";
+  echo "export CUDA_NVCC_EXECUTABLE=~/ccache/cuda/nvcc";
+  echo "source ${venv}/bin/activate";
+} >> "$onnx_init_file"
 chmod u+x "$onnx_init_file"
 
 # Cloning repos
