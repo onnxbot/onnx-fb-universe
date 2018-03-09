@@ -97,7 +97,7 @@ touch "$onnx_init_file"
 {
   echo "export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH";
   echo "export PATH=~/ccache/lib:/usr/local/cuda/bin:$PATH";
-  echo "export CUDA_NVCC_EXECUTABLE=~/ccache/cuda/nvcc";
+  echo "export CUDA_NVCC_EXECUTABLE=$ccache_root/cuda/nvcc";
   echo "source ${venv}/bin/activate";
 } >> "$onnx_init_file"
 chmod u+x "$onnx_init_file"
