@@ -133,9 +133,9 @@ class TestOperators(TestCase):
     def test_add_left_broadcast(self):
         x = Variable(torch.DoubleTensor(3), requires_grad=True)
         y = Variable(torch.DoubleTensor(2, 3), requires_grad=True)
-        self.assertONNXRaisesRegex(RuntimeError, 
-            r"ONNX export failed: Couldn't export operator expand.*",
-            lambda x, y: x + y, (x, y))
+        self.assertONNXRaisesRegex(RuntimeError,
+            r"ONNX export failed: Could not export a broadcasted operation.*",
+            lambda x, y: x + y, (x, y), verbose=True)
 
     def test_add_size1_broadcast(self):
         x = Variable(torch.DoubleTensor(2, 3), requires_grad=True)
