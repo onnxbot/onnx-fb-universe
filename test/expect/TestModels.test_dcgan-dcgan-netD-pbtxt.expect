@@ -332,23 +332,15 @@ graph {
     op_type: "Sigmoid"
   }
   node {
-    output: "31"
-    op_type: "Constant"
-    attribute {
-      name: "value"
-      t {
-        dims: 2
-        data_type: INT64
-        raw_data: "\377\377\377\377\377\377\377\377\001\000\000\000\000\000\000\000"
-      }
-      type: TENSOR
-    }
-  }
-  node {
     input: "30"
-    input: "31"
-    output: "32"
+    output: "31"
     op_type: "Reshape"
+    attribute {
+      name: "shape"
+      ints: -1
+      ints: 1
+      type: INTS
+    }
   }
   name: "torch-jit-export"
   input {
@@ -640,7 +632,7 @@ graph {
     }
   }
   output {
-    name: "32"
+    name: "31"
     type {
       tensor_type {
         elem_type: FLOAT
@@ -657,5 +649,5 @@ graph {
   }
 }
 opset_import {
-  version: 5
+  version: 2
 }

@@ -71,27 +71,19 @@ graph {
     }
   }
   node {
+    input: "7"
     output: "8"
-    op_type: "Constant"
+    op_type: "Reshape"
     attribute {
-      name: "value"
-      t {
-        dims: 2
-        data_type: INT64
-        raw_data: "\377\377\377\377\377\377\377\377\001\000\000\000\000\000\000\000"
-      }
-      type: TENSOR
+      name: "shape"
+      ints: -1
+      ints: 1
+      type: INTS
     }
   }
   node {
-    input: "7"
     input: "8"
     output: "9"
-    op_type: "Reshape"
-  }
-  node {
-    input: "9"
-    output: "10"
     op_type: "Squeeze"
     attribute {
       name: "axes"
@@ -175,7 +167,7 @@ graph {
     }
   }
   output {
-    name: "10"
+    name: "9"
     type {
       tensor_type {
         elem_type: FLOAT
@@ -189,5 +181,5 @@ graph {
   }
 }
 opset_import {
-  version: 5
+  version: 2
 }
