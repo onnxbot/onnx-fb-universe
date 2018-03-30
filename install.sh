@@ -30,8 +30,8 @@ _pip_install() {
 }
 
 # Install caffe2
-pip install -r "$REPOS_DIR/caffe2/caffe2/requirements.txt"
-cd "$REPOS_DIR/caffe2" && python setup_caffe2.py install && cd -
+pip install -r "$REPOS_DIR/pytorch/caffe2/requirements.txt"
+cd "$REPOS_DIR/pytorch" && python setup_caffe2.py install && cd -
 python -c 'from caffe2.python import build; from pprint import pprint; pprint(build.build_options)'
 
 # Install onnx
