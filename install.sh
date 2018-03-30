@@ -35,7 +35,7 @@ cd "$REPOS_DIR/pytorch" && python setup_caffe2.py install && cd -
 python -c 'from caffe2.python import build; from pprint import pprint; pprint(build.build_options)'
 
 # Install onnx
-_pip_install -b "$BUILD_DIR/onnx" "file://$REPOS_DIR/onnx#egg=onnx"
+_pip_install -b "$BUILD_DIR/onnx" "file://$REPOS_DIR/pytorch/third_party/onnx#egg=onnx"
 
 # Install pytorch
 pip install -r "$REPOS_DIR/pytorch/requirements.txt"

@@ -14,7 +14,7 @@ pip install -r "$REPOS_DIR/pytorch/caffe2/requirements.txt"
 cd "$REPOS_DIR/pytorch" && python setup_caffe2.py develop && cd -
 
 # Install onnx
-pip install -e "$REPOS_DIR/onnx"
+pip install -e "$REPOS_DIR/pytorch/third_party/onnx"
 
 # Install pytorch
 pip install -r "$REPOS_DIR/pytorch/requirements.txt"
