@@ -1,3 +1,6 @@
 [submodule "repos/pytorch"]
 	path = repos/pytorch
 	url = https://github.com/pytorch/pytorch.git
+[submodule "repos/onnx"]
+	path = repos/onnx
+	url = https://github.com/onnx/onnx.git
