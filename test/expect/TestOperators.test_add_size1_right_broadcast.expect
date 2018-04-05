@@ -12,6 +12,11 @@ graph {
       i: 1
       type: INT
     }
+    attribute {
+      name: "axis"
+      i: 1
+      type: INT
+    }
   }
   name: "torch-jit-export"
   input {
